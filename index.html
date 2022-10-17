@@ -6,22 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./index.js">  
+    <link rel="stylesheet" href="./index.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./jquery-1.12.4.js"></script>
+    <script src="./index.js"></script>
     <script src="https://kit.fontawesome.com/6282a8ba62.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="./img/logowhite.png" alt="">
+                <a href="#"><img src="./img/logowhite.png" alt=""></a>
             </div>
             <ul class="menu">
-                <li><a href="#">SUPERSPORT & SPORT</a></li>
-                <li><a href="#">SUPERNAKED</a></li>
-                <li><a href="#">SPORT TOURER</a></li>
-                <li><a href="#">ADVENTURE TOURER</a></li>
-                <li><a href="#">MODERN CLASSIC</a></li>
-                <li><a href="#">JET SKI - ALL</a></li>
+                <li class="main_menu">
+                    <a class="menu_txt" href="#">SUPERSPORT & SPORT</a>
+                    <div class="sub_">
+                        <div id="sub1" class="sub">
+                            <img src="./img/nav1.jpg" alt="">
+                            <a href="#">Ninja H2</a>   
+                            <a href="#">Ninja ZX-10R</a>
+                            <a href="#">Ninja 650</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_menu">
+                    <a class="menu_txt" href="#">SUPERNAKED</a>
+                    <div class="sub_">
+                        <div id="sub2" class="sub">
+                            <img src="./img/nav2.jpg" alt="">
+                            <a href="#">Z H2</a>
+                            <a href="#">Z900</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_menu">
+                    <a class="menu_txt" href="#">SPORT TOURER</a>
+                    <div class="sub_">
+                        <div id="sub3" class="sub">
+                            <img src="./img/nav3.jpg" alt="">
+                            <a href="#">Ninja H2 SX SE+</a>
+                            <a href="#">Ninja 1000SX</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_menu">
+                    <a class="menu_txt" href="#">ADVENTURE TOURER</a>
+                    <div class="sub_">
+                        <div id="sub4" class="sub">
+                            <img src="./img/nav4.jpg" alt="">   
+                            <a href="#">Versys 1000 SE</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_menu">
+                    <a class="menu_txt" href="#">MODERN CLASSIC</a>
+                    <div class="sub_">
+                        <div id="sub5" class="sub">
+                            <img src="./img/nav5.jpg" alt="">
+                            <a href="#">Z900RS</a>
+                            <a href="#">Z650RS</a>
+                            <a href="#">W800 </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="main_menu">
+                    <a class="menu_txt" href="#">JET SKI - ALL</a>
+                    <div class="sub_">
+                        <div id="sub6" class="sub">
+                            <img src="./img/nav6.jpg" alt="">
+                            <a href="#">SX-R</a>
+                            <a href="#">STX-15F</a>
+                            <a href="#">ULTRA 310X</a>
+                            <a href="#">ULTRA 310X SE</a>
+                            <a href="#">ULTRA 310R</a>
+                            <a href="#">ULTRA 310LX</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <div class="side">
                 <div class="search">
@@ -30,114 +94,303 @@
                 </div>
                 <ul class="icon">
                     <a href="#" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-                    <li><i class="fa-solid fa-bars"></i></li>
+                    <li id="hamburger"><i class="fa-solid fa-bars"></i></li>
                 </ul>
             </div>
         </nav>
-        <div class="sub_menu">
-            <div id="sub1" class="sub">
-                <img src="./img/nav1.jpg" alt="">
-                <a href="#">Ninja H2</a>   
-                <a href="#">Ninja ZX-10R</a>
-                <a href="#">Ninja 650</a>
-            </div>
-            <div id="sub2" class="sub">
-                <img src="./img/nav2.jpg" alt="">
-                <a href="#">Z H2</a>
-                <a href="#">Z900</a>
-            </div>
-            <div id="sub3" class="sub">
-                <img src="./img/nav3.jpg" alt="">
-                <a href="#">Ninja H2 SX SE+</a>
-                <a href="#">Ninja 1000SX</a>
-            </div>
-            <div id="sub4" class="sub">
-                <img src="./img/nav4.jpg" alt="">   
-                <a href="#">Versys 1000 SE</a>
-            </div>
-            <div id="sub5" class="sub">
-                <img src="./img/nav5.jpg" alt="">
-                <a href="#">Z900RS</a>
-                <a href="#">Z650RS</a>
-                <a href="#">W800 </a>
-            </div>
-            <div id="sub6" class="sub">
-                <img src="./img/nav6.jpg" alt="">
-                <a href="#">SX-R</a>
-                <a href="#">STX-15F</a>
-                <a href="#">ULTRA 310X</a>
-                <a href="#">ULTRA 310X SE</a>
-                <a href="#">ULTRA 310R</a>
-                <a href="#">ULTRA 310LX</a>
-            </div>
-        </div>
-        <div class="full_menu">
-            <div class="menu_list">
-                <div class="menu1">
-                    <h3>PRODUCT</h3>
-                    <ul>
-                        <li>SUPERSPORT & SPORT</li>
-                        <li>SUPERNAKED</li>
-                        <li>SPORT TOURER</li>
-                        <li>ADVENTURE TOURER</li>
-                        <li>MODERN CLASSIC</li>
-                        <li>JET SKI - ALL</li>
-                    </ul>
+        <div class="full">
+            <div class="full_menu">
+                <div class="menu_list">
+                    <div class="menu1">
+                        <h3>PRODUCT</h3>
+                        <ul>
+                            <li><a href="#">SUPERSPORT & SPORT</a></li>
+                            <li><a href="#">SUPERNAKED</a></li>
+                            <li><a href="#">SPORT TOURER</a></li>
+                            <li><a href="#">ADVENTURE TOURER</a></li>
+                            <li><a href="#">MODERN CLASSIC</a></li>
+                            <li><a href="#">JET SKI - ALL</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu2">
+                        <h3>SERVICE</h3>
+                        <ul>
+                            <li><a href="#">구매보증</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu3">
+                        <h3>NEWS</h3>
+                        <ul>
+                            <li><a href="#">프로모션</a></li>
+                            <li><a href="#">best Models</a></li>
+                            <li><a href="#">NEWS & EVENT</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu4">
+                        <h3>BUY</h3>
+                        <ul>
+                            <li><a href="#">look book</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu5">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">딜러찾기</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="menu2">
-                    <h3>SERVICE</h3>
-                    <ul>
-                        <li>구매보증</li>
-                        <li>고객센터</li>
-                    </ul>
+                <div class="logo_list">
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
                 </div>
-                <div class="menu3">
-                    <h3>NEWS</h3>
-                    <ul>
-                        <li>프로모션</li>
-                        <li>best Models</li>
-                        <li>NEWS & EVENT</li>
-                    </ul>
-                </div>
-                <div class="menu4">
-                    <h3>BUY</h3>
-                    <ul>
-                        <li>look book</li>
-                    </ul>
-                </div>
-                <div class="menu5">
-                    <h3>COMPANY</h3>
-                    <ul>
-                        <li>회사소개</li>
-                        <li>딜러찾기</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="logo_list">
-                <i class="fa-brands fa-facebook-square fa-2x"></i>
-                <i class="fa-brands fa-youtube fa-2x"></i>
-                <i class="fa-brands fa-instagram fa-2x"></i>
-            </div>
+            </div> 
         </div> 
     </header>
     <main>
-        <section class="section1">
-            <div class="article box1">
-                <div id="art1" class="more"><a href="#">MORE</a></div>
-            </div>
-            <div class="article box2">
-                <div id="art2" class="more"><a href="#">MORE</a></div>
-            </div>
-            <div class="article box3">
-                <div id="art3" class="more"><a href="#">MORE</a></div>
-            </div>
-            <div class="article box4">
-                <div id="art4" class="more"><a href="#">MORE</a></div>
-            </div>
-        </section>
-        <section class="section2">
-
-        </section>
+        <div class="wrap">
+            <section class="section1">
+                <div class="article box1">
+                    <ul class="main_txt ">
+                        <li><img src="./img/pc1-1.png" alt=""></li>
+                        <li class="m_txt1">SUPERCHARGED POWER</li>
+                        <li class="m_txt2">BUILT</li>
+                        <li class="m_txt2">BEYOND</li>
+                        <li class="m_txt2">BELIEF</li>
+                        <li class="m_txt3">998cc, FOUR-CYLINDER, 231 PS*</li>
+                        <li class="m_txt3">SUPERCHARGED ENGINE</li>
+                        <li class="m_txt3">LIGHTWEIGHT TRELLIS FRAME</li>
+                        <li class="m_txt3">FULLY ADJUSTABLE HIGH-PERFORMANCE</li>
+                        <li class="m_txt3">RACING SUSPENTION</li>
+                        <div class="more"><a href="#">MORE</a></div>
+                    </ul>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="article box2">
+                    <ul class="main_txt">
+                        <li><img src="./img/pc2-1.png" alt=""></li>
+                        <li class="m_txt1">BUILT FOR THOSE WHO RISE TO THE CHALLENGE</li>
+                        <li class="m_txt2">FACE YOURSELF</li>
+                        <li class="m_txt3">UPDATED 998cc FOUR-CYLINDER DOHC ENGINE</li>
+                        <li class="m_txt3">AND AIR-COOLED OIL COOLER</li>
+                        <li class="m_txt3">UPDATED CHASSIS GEOMETRY</li>
+                        <li class="m_txt3">NEW IMU-ENHANCED ELECTRONICS PACKAGE</li>
+                        <li class="more"><a href="#">MORE</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="article box3">
+                    <ul class="main_txt">
+                        <li><img src="./img/pc3-1.png" alt=""></li>
+                        <li class="m_txt1">UNPRECEDENTED POWER</li>
+                        <li class="m_txt2">SUPERCHARGE</li>
+                        <li class="m_txt3">PARALLEL-TWIN 649cc ENGINE</li>
+                        <li class="m_txt3">LIGHTWEIGHT TRELLIS FRAME</li>
+                        <li class="m_txt3">NEW SUGOMI™</li>
+                        <li class="m_txt3">NEW IMU-ENHANCED ELECTRONICS PACKAGE</li>
+                        <li class="more"><a href="#">MORE</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section4">
+                <div class="article box4">
+                    <ul class="main_txt">
+                        <li><img src="./img/pc4-1.png" alt=""></li>
+                        <li class="m_txt1">THE RETRO REVOLUTION IS HERE</li>
+                        <li class="m_txt2">THE 1973 LEGEND</li>
+                        <li class="m_txt2">RETURNS</li>
+                        <li class="m_txt3">948cc LIQUID-COOLEN, INLINE FOUR CYLINDER ENGINE</li>
+                        <li class="m_txt3">ASSIST AND SLIPPER CLUTCH</li>
+                        <li class="m_txt3">HORIZONTAL BACK-LINK REAR SUSPENTION</li>
+                        <li class="more"><a href="#">MORE</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section5">
+                <div class="content1">
+                    <div class="content_txt contxt1"><span>BEST MODEL</span></div>
+                    <div class="content_best">
+                        <div class="one">
+                            <div class="item">
+                                <img class="model" src="./img/mc01.jpg" alt="">
+                                <a class="more_btn" href="#">MORE</a>
+                                <div class="detail card1">
+                                    <img src="./img/mc01_txt.jpg" alt="">
+                                    <div class="info">
+                                        <h3>Built Beyond Belief</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="item">
+                                <img class="model" src="./img/mc02.jpg" alt="">
+                                <a class="more_btn" href="#">MORE</a>
+                                <div class="detail card2">
+                                    <img src="./img/mc02_txt.jpg" alt="">
+                                    <div class="info">
+                                        <h3>월드 슈퍼 바이크 (WSBK)<br>챔피언십에 가장 근접한 모델</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="item">
+                                <img class="model" src="./img/mc03.jpg" alt="">
+                                <a class="more_btn" href="#">MORE</a>
+                                <div class="detail card3">
+                                    <img src="./img/mc03_txt.jpg" alt="">
+                                    <div class="info">
+                                        <h3>차세대 "Z"의 등장</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="model" src="./img/mc04.jpg" alt="">
+                                <a class="more_btn" href="#">MORE</a>
+                                <div class="detail card4">
+                                    <img src="./img/mc04_txt.jpg" alt="">
+                                    <div class="info">
+                                        <h3>세번째 변화는 가장 진보된<br>Ninja H2 SX입니다.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <div class="item">
+                                <img class="model" src="./img/mc05.jpg" alt="">
+                                <a class="more_btn" href="#">MORE</a>
+                                <div class="detail card5">
+                                    <img src="./img/mc05_txt.jpg" alt="">
+                                    <div class="info">
+                                        <h3>스포츠 라이딩과 투어링을 위한<br>다목적 어드벤처 스타일 모델</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="model" src="./img/mc06.jpg" alt="">
+                                <a class="more_btn" href="#">MORE</a>
+                                <div class="detail card6">
+                                    <img src="./img/mc06_txt.jpg" alt="">
+                                    <div class="info">
+                                        <h3>CAFE 레이서 이미지 모델</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="content_txt contxt2"><span>NEWS & EVENT</span></div>
+                    <div class="content_news">
+                        <div class="slider">
+                            <div class="slide">
+                                <div class="news">
+                                    <img src="./img/thumb09.png" alt="">
+                                    <ul class="news_text1">
+                                        <li class="txt1">2020 최고의 경량 스트리트<br>바이크 : 가와사키 Z400</li>
+                                        <li class="txt2">2020.12.11</li>
+                                        <li class="link"><a href="#">READ MORE ></a></li>
+                                    </ul>
+                                </div>
+                                <div class="news">
+                                    <img src="./img/thumb08.png" alt="">
+                                    <ul class="news_text1">
+                                        <li class="txt1">가와사키, 1970년대 Z1 오토바이 용<br>실린더 헤드 재현</li>
+                                        <li class="txt2">2020.06.17</li>
+                                        <li class="link"><a href="#">READ MORE ></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="news">
+                                    <img src="./img/thumb07.png" alt="">
+                                    <ul class="news_text1">
+                                        <li class="txt1">통근하기에 가장 좋은<br>표준 오토바이</li>
+                                        <li class="txt2">2020.05.28</li>
+                                        <li class="link"><a href="#">READ MORE ></a></li>
+                                    </ul>
+                                </div>
+                                <div class="news">
+                                    <img src="./img/thumb06.png" alt="">
+                                    <ul class="news_text1">
+                                        <li class="txt1">새로운 Z H2<br>라스 베이거스에서 잭팟 터뜨리다!</li>
+                                        <li class="txt2">2020.02.21</li>
+                                        <li class="link"><a href="#">READ MORE ></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="news">
+                                    <img src="./img/thumb05.png" alt="">
+                                    <ul class="news_text1">
+                                        <li class="txt1">가와사키 수퍼 차저<br>EICMA</li>
+                                        <li class="txt2">2019.11.19</li>
+                                        <li class="link"><a href="#">READ MORE ></a></li>
+                                    </ul>
+                                </div>
+                                <div class="news">
+                                    <img src="./img/thumb04.png" alt="">
+                                    <ul class="news_text1">
+                                        <li class="txt1">horiuchi Yuji,<br>가와사키 EICMA 기조 연설</li>
+                                        <li class="txt2">2019.11.08</li>
+                                        <li class="link"><a href="#">READ MORE ></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="btn_box">
+                        <div class="box">
+                            <button class="slide_btn left"></button>
+                            <button class="slide_btn right"></button>
+                        </div>
+                        <hr class="line"></hr>
+                        <a href="#">모든 뉴스 보기</a>
+                    </div>
+                    <div class="arrow-btn">
+                        <div><i id="prev" class="fas fa-chevron-left"></i></div>
+                        <div><i id="next" class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div> 
+                <footer>
+                    <div class="footer-t">
+                        <div class="ft-logo"><img src="./img/logo_footer.png" alt=""></div>
+                        <div class="ft-txt">
+                            <div class="ft01">
+                                <a href="#">대전기계공업(주)</a>
+                                <a href="#">모터사이클</a>
+                                <a href="#">제트스키</a>
+                                <a href="#">딜러찾기</a>
+                                <a href="#">서비스</a>
+                                <a href="#">뉴스&이벤트</a>
+                            </div>
+                            <ul class="ft02">
+                                <li>공식수입원 대전기계공업 주식회사</li>
+                            </ul>
+                            <ul class="ft03">
+                                <li>본사 : 경기도 평택시 서탄면 수월암4길 239</li>
+                                <li>대표자 : 김재일</li>
+                                <li>사업자등록번호 : 204-81-12238</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-b">
+                        <ul class="fb-txt">
+                            <li>Copyright 2020 Daijeon Machinery Co., Ltd. All rights reserved. </li>
+                            <li><a href="#">사이트 이용약관</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <a href="#" target="_blank"><i class="fa-brands fa-facebook-square fa"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-youtube fa"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-.5x"></i></a>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+        </div>
     </main>
 </body>
 </html>
